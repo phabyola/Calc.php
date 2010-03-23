@@ -1,20 +1,44 @@
-<?php
+<pre><?php
 
 	include 'calc.php';
 	
-		echo soma (5, 2),  '<br>'; 
+	if (soma (5, 2) == 5 + 2 )
+		echo 'Ok<br>';
+	else
+		echo 'Erro<br>';
+		
+	if (subtracao(5, 2) == 5 - 2 )
+		echo 'Ok<br>';
+	else
+		echo 'Erro<br>';
+		
+	if (divisao (5, 2) == 5 / 2 )
+		echo 'Ok<br>';
+	else
+		echo 'Erro<br>';
+		
+	if (multiplicacao (5, 2) == 5 * 2 )
+		echo 'Ok<br>';
+	else
+		echo 'Erro<br>';
+		
+	if (soma (5, multiplicacao (2, 3)) == 5 + (2 * 3))
+		echo 'Ok<br>';
+	else
+		echo 'Erro<br>';
+		
+	if (soma (subtracao (8, 3), 5 + 8 - 3) )
+		echo 'Ok<br>';
+	else
+		echo 'Erro<br>';
+		
+	if (soma (divisao (9, 3), multiplicacao (4, 2)))
+		echo 'Ok<br>';
+	else
+		echo 'Erro<br>';
+		
+			 
 	
-		echo subtracao(5, 2),  '<br>'; 
-	
-		echo divisao (5, 2),  '<br>'; 
-	
-		echo multiplicacao (5, 2), '<br>';
-	
-		echo soma (5, multiplicacao (2, 3)), '<br>';
-	
-		echo soma (subtracao (8, 3), 5), '<br>';
-	
-		echo soma (divisao (9, 3), multiplicacao (4, 2)), '<br>';
+		
 
-
-?>
+?> </pre>
